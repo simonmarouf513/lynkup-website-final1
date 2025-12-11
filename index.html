@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LYNKUP — Real-Time Social Connection</title>
+    <meta
+      name="description"
+      content="LYNKUP is a real-time social connection app that helps you meet people nearby for simple offline moments."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                yellow: "#ffd600",
+                pink: "#ff4fbf",
+                cyan: "#41e9ff",
+                purple: "#8b5dff",
+                black: "#050505",
+                dark: "#111111",
+                muted: "#bcbcbc",
+              },
+            },
+            fontFamily: {
+              sans: ["Space Grotesk", "system-ui", "sans-serif"],
+              display: ["League Spartan", "system-ui", "sans-serif"],
+            },
+            backgroundImage: {
+              "radial-hero":
+                "radial-gradient(circle at top, #111111 0, #020202 45%, #000000 100%)",
+              "glass-card":
+                "linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01))",
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Custom utility for the exact gradient feel */
+      body {
+        background: radial-gradient(
+          circle at top,
+          #111111 0,
+          #020202 45%,
+          #000000 100%
+        );
+        color: #f9f9f9;
+      }
+      .glass-border {
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+      /* Hide scrollbar for clean UI in some containers if needed */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.559.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
