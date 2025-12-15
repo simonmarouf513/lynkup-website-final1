@@ -36,7 +36,10 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
-            <Button href="#contact">Join the Waitlist</Button>
+            <Button href="https://forms.gle/mtLPTjdwZca1Wxqt8" target="_blank">
+  Meet someone now
+</Button>
+
             <Button variant="ghost" href="#social-comfort">
               Explore Vibes
             </Button>
